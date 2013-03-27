@@ -51,4 +51,16 @@ $(document).on("ready", function(){
 		reverse: true}, true, true);
 		}
 	});
+    $('a.next').on( "click", function() {
+        var next = $( this ).jqmData( "next" )
+        if (next.length > 0) {
+            $.mobile.changePage($('#'+next), {transition: "slide"}, true, true);
+        }
+    });
+    $('a.prev').on( "click", function() {
+        var prev = $( this ).jqmData( "prev" )
+        if (prev.length > 0) {
+            $.mobile.changePage($('#'+prev), {transition: "slide", reverse: true}, true, true);
+        }
+    });
 });
