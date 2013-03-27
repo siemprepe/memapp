@@ -32,3 +32,11 @@ body {
     -o-user-select: none;
     user-select: none;
 }
+li.news_part{
+    background: rgba(123,123,123,0.1);
+}
+
+a.news_item{
+    color: #000 !important;
+    text-shadow: none !important;
+}
