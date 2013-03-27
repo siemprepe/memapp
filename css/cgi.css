@@ -1,3 +1,4 @@
+/*
 body {
     background-image: url(../img/cgibg.png);
     background-repeat:repeat-y;
@@ -8,11 +9,20 @@ body {
 .ui-page {
     background: transparent;
 }
+*/
 .ui-content{
     background: transparent;
 	color:black;
 	text-shadow:none;
 	padding-top:25px !important;
+}
+
+#news,#leads { background-image: url(../img/cgibg.png); }
+/* Background settings */
+.ui-page {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 /* Prevent text selection while swiping with mouse */
 .ui-page .ui-header, .ui-title, .control .ui-btn, .trivia-btn, .ui-content {

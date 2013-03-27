@@ -41,7 +41,7 @@ $(document).on("ready", function(){
 	$('div.ui-page').on("swipeleft", function(){
 		var nextpage = $(this).next('div[data-role="page"]');
 		if (nextpage.length > 0) {
-			$.mobile.changePage(nextpage, "slide", false, true);
+			$.mobile.changePage(nextpage, {transition: "slide"}, true, true);
 		}
 	});
 	$('div.ui-page').on("swiperight", function(){
