@@ -14,19 +14,6 @@ body {
 	text-shadow:none;
 	padding-top:25px !important;
 }
-/* Background settings 
-.demo-page {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url(../img/cgibg.png);
-}
-/* Transparent footer 
-.demo-page .ui-footer {
-    background: none;
-    border: none;
-    bottom: 0;
-}*/
 /* Prevent text selection while swiping with mouse */
 .ui-page .ui-header, .ui-title, .control .ui-btn, .trivia-btn, .ui-content {
     -webkit-user-select: none;

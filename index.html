@@ -1,155 +1,232 @@
 ﻿<!doctype html>
 <!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
 <!-- Appcache Facts http://appcachefacts.info/ -->
-<!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
+<!--[if IEMobile 7 ]>
+<html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Memapp</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  
-  <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320"/>
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  
-  <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
-  <!-- For iPhone 4 with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-  <!-- For first-generation iPad: -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-  <!-- For nokia devices: -->
-  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-  
-  <!--iOS web app, deletable if not needed -->
-  <!--<meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="apple-touch-startup-image" href="img/l/splash.png">-->
-  
-  <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
-  
-  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-  <meta http-equiv="cleartype" content="on">
-  
-  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
-  
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=1">
-  <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css">
-  <link rel="stylesheet" href="css/cgi.css">
- 
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
+    <title>Memapp</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+
+    <!--iOS web app, deletable if not needed -->
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-startup-image" href="img/l/splash.png">-->
+
+    <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
+
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+    <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css">
+    <link rel="stylesheet" href="css/cgi.css">
+
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr-1.7.min.js"></script>
 </head>
 
 <body>
 
-  <div id="container">
-    <header> 
-    </header>
-    <div id="main" role="main">
-	
-	<div data-url="news" data-role="page" id="news" class="ui-page" data-dom-cache="true" data-theme="a" data-prev="null" data-next="leads">
-	    <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
-		<h1>News</h1>
-		<!--<a href="swipe-page.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>-->
-	    </div>
-	    <div class="ui-content">
-		<div style="padding:20px;">
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel massa quam, quis sollicitudin purus. Etiam consectetur convallis arcu, sed blandit justo malesuada quis. Aliquam vel tortor eros. Vivamus at felis vitae dolor tincidunt convallis sed eu risus. Mauris at sem non eros aliquet vestibulum. Fusce accumsan molestie lacus, ut varius velit mattis in. Integer nec nibh nunc. Curabitur quis urna neque, at dapibus massa. Ut egestas imperdiet odio eget malesuada. Curabitur eu nulla nec tortor pulvinar malesuada. Integer ullamcorper consequat risus, quis adipiscing enim auctor ac. In congue semper porta. Vivamus mi turpis, dignissim et dignissim vitae, tempus egestas tellus. Donec nisl nibh, ultrices non posuere ut, iaculis pharetra erat. Duis sit amet mattis elit.
+<div id="container">
 
-Suspendisse a neque lacus, vel congue ipsum. Ut vehicula metus vitae eros imperdiet nec vulputate lectus scelerisque. Vivamus pellentesque, orci ac iaculis fermentum, magna ante pellentesque felis, nec tempus augue leo eget justo. Praesent condimentum risus ut purus pretium lacinia non at ante. Donec interdum iaculis arcu a fringilla. Nunc vestibulum molestie metus, at viverra felis aliquet interdum. Duis porta vestibulum nisi, in venenatis metus tristique id. Duis ligula mi, ultricies sed sagittis eget, tempor nec diam.
+        <div data-url="news" data-role="page" id="news" class="ui-page" data-dom-cache="true" data-theme="a"
+             data-prev="null" data-next="leads">
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
+                <h1>News</h1>
+                <!--<a href="swipe-page.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>-->
+            </div>
+            <div class="ui-content">
+                <div style="padding:20px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel massa quam, quis sollicitudin
+                        purus. Etiam consectetur convallis arcu, sed blandit justo malesuada quis. Aliquam vel tortor
+                        eros. Vivamus at felis vitae dolor tincidunt convallis sed eu risus. Mauris at sem non eros
+                        aliquet vestibulum. Fusce accumsan molestie lacus, ut varius velit mattis in. Integer nec nibh
+                        nunc. Curabitur quis urna neque, at dapibus massa. Ut egestas imperdiet odio eget malesuada.
+                        Curabitur eu nulla nec tortor pulvinar malesuada. Integer ullamcorper consequat risus, quis
+                        adipiscing enim auctor ac. In congue semper porta. Vivamus mi turpis, dignissim et dignissim
+                        vitae, tempus egestas tellus. Donec nisl nibh, ultrices non posuere ut, iaculis pharetra erat.
+                        Duis sit amet mattis elit.
 
-Sed mattis elementum vulputate. Suspendisse vitae orci ac sem ornare tincidunt at quis diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis sem ut justo posuere laoreet. Quisque et nisi mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed sit amet elit augue. Aliquam diam diam, suscipit a fermentum a, varius in purus. Vestibulum sodales mauris sit amet dolor pharetra sed tempor tellus commodo. Ut posuere massa ac leo feugiat ac vulputate tortor bibendum.
+                        Suspendisse a neque lacus, vel congue ipsum. Ut vehicula metus vitae eros imperdiet nec
+                        vulputate lectus scelerisque. Vivamus pellentesque, orci ac iaculis fermentum, magna ante
+                        pellentesque felis, nec tempus augue leo eget justo. Praesent condimentum risus ut purus pretium
+                        lacinia non at ante. Donec interdum iaculis arcu a fringilla. Nunc vestibulum molestie metus, at
+                        viverra felis aliquet interdum. Duis porta vestibulum nisi, in venenatis metus tristique id.
+                        Duis ligula mi, ultricies sed sagittis eget, tempor nec diam.
 
-Aenean faucibus, sapien sed tempus facilisis, nulla diam aliquam arcu, sed scelerisque urna felis eu ipsum. Fusce consectetur vestibulum pretium. Sed gravida tellus a tortor laoreet placerat. Nullam sollicitudin vehicula sem, eget varius purus condimentum a. Mauris est elit, rutrum sit amet faucibus at, rutrum nec nisi. In ac sapien ac orci tincidunt fermentum et vulputate quam. Phasellus rutrum suscipit vestibulum. Curabitur dapibus fringilla velit hendrerit gravida.
+                        Sed mattis elementum vulputate. Suspendisse vitae orci ac sem ornare tincidunt at quis diam. Cum
+                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis sem
+                        ut justo posuere laoreet. Quisque et nisi mauris. Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia Curae; Sed sit amet elit augue. Aliquam diam diam, suscipit a
+                        fermentum a, varius in purus. Vestibulum sodales mauris sit amet dolor pharetra sed tempor
+                        tellus commodo. Ut posuere massa ac leo feugiat ac vulputate tortor bibendum.
 
-Suspendisse potenti. Nulla facilisi. Mauris aliquet dictum lacinia. Phasellus eleifend laoreet elit in posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent sit amet mi sed turpis ullamcorper aliquam. Morbi sit amet nibh purus, sed venenatis quam. Vivamus feugiat erat sit amet mi sodales id euismod mauris viverra. Aenean id orci lorem, a pharetra dolor.
+                        Aenean faucibus, sapien sed tempus facilisis, nulla diam aliquam arcu, sed scelerisque urna
+                        felis eu ipsum. Fusce consectetur vestibulum pretium. Sed gravida tellus a tortor laoreet
+                        placerat. Nullam sollicitudin vehicula sem, eget varius purus condimentum a. Mauris est elit,
+                        rutrum sit amet faucibus at, rutrum nec nisi. In ac sapien ac orci tincidunt fermentum et
+                        vulputate quam. Phasellus rutrum suscipit vestibulum. Curabitur dapibus fringilla velit
+                        hendrerit gravida.
 
-Nam mattis mattis tempor. Etiam tempor ligula sit amet purus pulvinar sollicitudin. Morbi pretium venenatis neque ac tincidunt. Etiam eget orci eget ante porta fringilla vel in nisl. Praesent fringilla commodo nunc, rutrum sodales lacus feugiat sit amet. Duis non metus arcu, at tincidunt nibh. Pellentesque ut augue dui, porta ornare sapien. Vestibulum commodo orci in eros posuere eleifend. Praesent auctor, elit non dapibus dignissim, enim eros lobortis turpis, vel lacinia urna neque at quam. Cras a leo nunc, id pulvinar justo. Aliquam erat volutpat. In sollicitudin congue bibendum.
+                        Suspendisse potenti. Nulla facilisi. Mauris aliquet dictum lacinia. Phasellus eleifend laoreet
+                        elit in posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Praesent sit amet mi sed turpis ullamcorper aliquam. Morbi sit amet nibh purus,
+                        sed venenatis quam. Vivamus feugiat erat sit amet mi sodales id euismod mauris viverra. Aenean
+                        id orci lorem, a pharetra dolor.
 
-Pellentesque condimentum ultricies mollis. Vestibulum eget ultricies nulla. Donec velit ligula, aliquam id gravida at, facilisis nec lectus. Aenean facilisis tincidunt fermentum. Sed faucibus ornare ipsum nec ornare. Ut mattis semper iaculis. Aliquam tempus eleifend ultricies. Donec non bibendum metus. Fusce felis magna, semper sit amet laoreet et, dapibus eget eros. Ut vitae ligula diam. Morbi cursus justo ac ipsum vehicula varius.
+                        Nam mattis mattis tempor. Etiam tempor ligula sit amet purus pulvinar sollicitudin. Morbi
+                        pretium venenatis neque ac tincidunt. Etiam eget orci eget ante porta fringilla vel in nisl.
+                        Praesent fringilla commodo nunc, rutrum sodales lacus feugiat sit amet. Duis non metus arcu, at
+                        tincidunt nibh. Pellentesque ut augue dui, porta ornare sapien. Vestibulum commodo orci in eros
+                        posuere eleifend. Praesent auctor, elit non dapibus dignissim, enim eros lobortis turpis, vel
+                        lacinia urna neque at quam. Cras a leo nunc, id pulvinar justo. Aliquam erat volutpat. In
+                        sollicitudin congue bibendum.
 
-Phasellus venenatis eleifend diam, eget tempus nibh adipiscing ut. Ut facilisis tempus mollis. Vestibulum tincidunt odio eget arcu eleifend vestibulum. Cras tortor arcu, rhoncus sit amet tristique a, tincidunt et mi. Quisque lacinia dolor sed lorem ultricies eget imperdiet nisi convallis. Nulla facilisi. Integer sed lectus tortor, nec tristique turpis. Aenean a lectus non dolor lobortis commodo sit amet in elit. Nulla posuere erat sit amet ligula fermentum placerat. Cras eleifend nunc ut nisi mattis quis sollicitudin urna viverra. In cursus est id ante condimentum interdum. Proin porta turpis scelerisque mi aliquam ut hendrerit risus tristique. Nam massa urna, posuere et blandit vitae, mollis sit amet turpis. Suspendisse euismod magna nec tortor tincidunt laoreet. Suspendisse molestie leo et dui faucibus sit amet molestie dui sodales.
+                        Pellentesque condimentum ultricies mollis. Vestibulum eget ultricies nulla. Donec velit ligula,
+                        aliquam id gravida at, facilisis nec lectus. Aenean facilisis tincidunt fermentum. Sed faucibus
+                        ornare ipsum nec ornare. Ut mattis semper iaculis. Aliquam tempus eleifend ultricies. Donec non
+                        bibendum metus. Fusce felis magna, semper sit amet laoreet et, dapibus eget eros. Ut vitae
+                        ligula diam. Morbi cursus justo ac ipsum vehicula varius.
 
-Nunc felis nibh, volutpat ac tincidunt eu, egestas vitae metus. Donec varius fermentum leo vel rhoncus. Suspendisse mauris diam, aliquet et iaculis non, tincidunt quis velit. Aenean nulla sem, adipiscing in pretium rhoncus, dapibus quis odio. Curabitur elit felis, ullamcorper non gravida a, vehicula in enim. Aliquam erat volutpat. Donec molestie pharetra interdum. Nunc ipsum arcu, ultrices vel vestibulum eu, varius a tellus. In hac habitasse platea dictumst. Quisque hendrerit ligula sit amet erat mollis sit amet rhoncus mauris imperdiet. Quisque semper consectetur orci id mollis. Sed eu tellus eu nunc convallis adipiscing. Aliquam commodo placerat tincidunt. Donec sapien lacus, rutrum ut auctor id, pulvinar ut ligula.
+                        Phasellus venenatis eleifend diam, eget tempus nibh adipiscing ut. Ut facilisis tempus mollis.
+                        Vestibulum tincidunt odio eget arcu eleifend vestibulum. Cras tortor arcu, rhoncus sit amet
+                        tristique a, tincidunt et mi. Quisque lacinia dolor sed lorem ultricies eget imperdiet nisi
+                        convallis. Nulla facilisi. Integer sed lectus tortor, nec tristique turpis. Aenean a lectus non
+                        dolor lobortis commodo sit amet in elit. Nulla posuere erat sit amet ligula fermentum placerat.
+                        Cras eleifend nunc ut nisi mattis quis sollicitudin urna viverra. In cursus est id ante
+                        condimentum interdum. Proin porta turpis scelerisque mi aliquam ut hendrerit risus tristique.
+                        Nam massa urna, posuere et blandit vitae, mollis sit amet turpis. Suspendisse euismod magna nec
+                        tortor tincidunt laoreet. Suspendisse molestie leo et dui faucibus sit amet molestie dui
+                        sodales.
 
-Nam lorem urna, lobortis ut mattis non, condimentum eget lacus. Phasellus accumsan sapien ac nisl suscipit vitae viverra ligula commodo. Duis ullamcorper commodo turpis at elementum. Integer quis neque ligula, eu bibendum lectus. Suspendisse rutrum augue non turpis faucibus ac lacinia nisi aliquet. Fusce egestas, sem eget tincidunt volutpat, libero purus convallis tortor, eu ultricies leo libero adipiscing dui. Vivamus non felis metus. Praesent quis mauris est, vel accumsan metus. Integer nec magna quis ligula consequat faucibus. Aenean egestas pretium lacus, et pharetra diam rutrum ut. Aliquam erat volutpat. Proin id purus eget sem faucibus volutpat vulputate sit amet sem.
+                        Nunc felis nibh, volutpat ac tincidunt eu, egestas vitae metus. Donec varius fermentum leo vel
+                        rhoncus. Suspendisse mauris diam, aliquet et iaculis non, tincidunt quis velit. Aenean nulla
+                        sem, adipiscing in pretium rhoncus, dapibus quis odio. Curabitur elit felis, ullamcorper non
+                        gravida a, vehicula in enim. Aliquam erat volutpat. Donec molestie pharetra interdum. Nunc ipsum
+                        arcu, ultrices vel vestibulum eu, varius a tellus. In hac habitasse platea dictumst. Quisque
+                        hendrerit ligula sit amet erat mollis sit amet rhoncus mauris imperdiet. Quisque semper
+                        consectetur orci id mollis. Sed eu tellus eu nunc convallis adipiscing. Aliquam commodo placerat
+                        tincidunt. Donec sapien lacus, rutrum ut auctor id, pulvinar ut ligula.
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In sit amet leo vel nulla aliquet ornare sed ac magna. Integer cursus massa in orci imperdiet auctor. Vestibulum ornare purus eget tellus dignissim a hendrerit nisi aliquam. Sed posuere dolor a dolor porttitor a tempor nibh feugiat. Sed ac sagittis quam. Suspendisse aliquet vestibulum varius. Morbi vitae consectetur odio.
+                        Nam lorem urna, lobortis ut mattis non, condimentum eget lacus. Phasellus accumsan sapien ac
+                        nisl suscipit vitae viverra ligula commodo. Duis ullamcorper commodo turpis at elementum.
+                        Integer quis neque ligula, eu bibendum lectus. Suspendisse rutrum augue non turpis faucibus ac
+                        lacinia nisi aliquet. Fusce egestas, sem eget tincidunt volutpat, libero purus convallis tortor,
+                        eu ultricies leo libero adipiscing dui. Vivamus non felis metus. Praesent quis mauris est, vel
+                        accumsan metus. Integer nec magna quis ligula consequat faucibus. Aenean egestas pretium lacus,
+                        et pharetra diam rutrum ut. Aliquam erat volutpat. Proin id purus eget sem faucibus volutpat
+                        vulputate sit amet sem.
 
-Nullam a nisi neque, id vehicula nulla. Nulla aliquam elit et velit bibendum vitae ultrices tellus dictum. Cras feugiat fermentum mollis. Aenean commodo sapien erat. Phasellus dignissim dignissim arcu, lobortis gravida eros congue at. Suspendisse interdum enim sit amet tortor facilisis in semper enim iaculis. Mauris ultrices vulputate euismod. Pellentesque at egestas mauris. Donec metus libero, auctor malesuada tincidunt et, aliquet a odio. Donec blandit consectetur tellus a dignissim. Cras semper est vel augue dictum in placerat sapien cursus. Sed velit orci, aliquam quis fermentum eget, pellentesque at enim. Nam fermentum scelerisque aliquam. Maecenas nec lorem diam, ut rutrum nibh. Integer eu diam turpis.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In sit
+                        amet leo vel nulla aliquet ornare sed ac magna. Integer cursus massa in orci imperdiet auctor.
+                        Vestibulum ornare purus eget tellus dignissim a hendrerit nisi aliquam. Sed posuere dolor a
+                        dolor porttitor a tempor nibh feugiat. Sed ac sagittis quam. Suspendisse aliquet vestibulum
+                        varius. Morbi vitae consectetur odio.
 
-Nullam dapibus adipiscing vulputate. Vivamus dignissim leo vitae nibh porta eu hendrerit purus congue. Phasellus commodo, augue vitae fringilla lacinia, augue dui iaculis felis, in venenatis enim quam auctor eros. Phasellus ultrices, odio vel tristique semper, mi elit tristique nibh, vitae lobortis enim ligula vitae magna. Vivamus at lacinia augue. Curabitur tristique feugiat metus, interdum elementum augue elementum vitae. Vestibulum quis enim placerat dolor tempus bibendum. Duis sed sodales odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus varius tempor. Morbi dapibus nunc id lorem porta ut bibendum ante dictum. Nam ullamcorper condimentum tincidunt. Integer nunc massa, porta eget hendrerit non, facilisis et ligula. Fusce fringilla ornare leo vitae rhoncus. Praesent id mi nec nisl suscipit feugiat accumsan ut neque.</p></div>
-	    </div>
-	    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
-		<!--		
-		<div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
-		    <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
-		    <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
-		</div>
-		<a href="#trivia-city" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Trivia</a>-->
-	    </div>
-	</div>
+                        Nullam a nisi neque, id vehicula nulla. Nulla aliquam elit et velit bibendum vitae ultrices
+                        tellus dictum. Cras feugiat fermentum mollis. Aenean commodo sapien erat. Phasellus dignissim
+                        dignissim arcu, lobortis gravida eros congue at. Suspendisse interdum enim sit amet tortor
+                        facilisis in semper enim iaculis. Mauris ultrices vulputate euismod. Pellentesque at egestas
+                        mauris. Donec metus libero, auctor malesuada tincidunt et, aliquet a odio. Donec blandit
+                        consectetur tellus a dignissim. Cras semper est vel augue dictum in placerat sapien cursus. Sed
+                        velit orci, aliquam quis fermentum eget, pellentesque at enim. Nam fermentum scelerisque
+                        aliquam. Maecenas nec lorem diam, ut rutrum nibh. Integer eu diam turpis.
 
-	<div data-url="leads" data-role="page" id="city" class="ui-page demo-page" data-dom-cache="true" data-theme="a" data-prev="prevCity" data-next="nextCity">
-	    <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
-		<h1>Leads</h1>
-		<!--<a href="swipe-page.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>-->
-	    </div>
-	    <div data-role="content" class="ui-content">
-		<div style="padding:20px;">
-		
-        	</div>
-	    </div>
-	    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
-		<!--		
-		<div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
-		    <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
-		    <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
-		</div>
-		<a href="#trivia-city" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Trivia</a>-->
-	    </div>
-	</div>
+                        Nullam dapibus adipiscing vulputate. Vivamus dignissim leo vitae nibh porta eu hendrerit purus
+                        congue. Phasellus commodo, augue vitae fringilla lacinia, augue dui iaculis felis, in venenatis
+                        enim quam auctor eros. Phasellus ultrices, odio vel tristique semper, mi elit tristique nibh,
+                        vitae lobortis enim ligula vitae magna. Vivamus at lacinia augue. Curabitur tristique feugiat
+                        metus, interdum elementum augue elementum vitae. Vestibulum quis enim placerat dolor tempus
+                        bibendum. Duis sed sodales odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas cursus varius tempor. Morbi dapibus nunc id lorem porta ut bibendum ante dictum. Nam
+                        ullamcorper condimentum tincidunt. Integer nunc massa, porta eget hendrerit non, facilisis et
+                        ligula. Fusce fringilla ornare leo vitae rhoncus. Praesent id mi nec nisl suscipit feugiat
+                        accumsan ut neque.</p></div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
+                <!--
+                <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
+                    <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
+                    <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
+                </div>
+                <a href="#trivia-city" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Trivia</a>-->
+            </div>
+        </div>
 
-    </div>
-    
-    <footer>
+        <div data-url="leads" data-role="page" id="city" class="ui-page demo-page" data-dom-cache="true" data-theme="a"
+             data-prev="prevCity" data-next="nextCity">
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
+                <h1>Leads</h1>
+                <!--<a href="swipe-page.html" data-direction="reverse" data-icon="delete" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>-->
+            </div>
+            <div data-role="content" class="ui-content">
+                <div style="padding:20px;">
 
-    </footer>
-  </div> <!--! end of #container -->
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
+                <!--
+                <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
+                    <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
+                    <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
+                </div>
+                <a href="#trivia-city" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Trivia</a>-->
+            </div>
+        </div>
+
+</div>
+<!--! end of #container -->
 
 
-  <!-- JavaScript at the bottom for fast page loading -->
+<!-- JavaScript at the bottom for fast page loading -->
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>-->
-  <script src='js/libs/jquery-1.9.1.js'></script>
-  <script src='js/libs/jquery.mobile-1.3.0.js'></script>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>-->
+<script src='js/libs/jquery-1.9.1.js'></script>
+<script src='js/libs/jquery.mobile-1.3.0.js'></script>
 
 
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/mylibs/respond.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end concatenated and minified scripts-->
+<!-- scripts concatenated and minified via ant build script-->
+<script src="js/mylibs/respond.js"></script>
+<script src="js/script.js"></script>
+<!-- end concatenated and minified scripts-->
 
-  <!-- Debugger - remove for production -->
-  <!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
-  
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID 
-  <script>
-    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    s.parentNode.insertBefore(g,s)}(document,"script"));
-  </script>
+<!-- Debugger - remove for production -->
+<!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
+
+<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
+<script>
+  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+  s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>
 -->
 </body>
 </html>
