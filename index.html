@@ -43,7 +43,7 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css?v=1">
-    <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css">
     <link rel="stylesheet" href="css/cgi.css">
 
     <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -79,13 +79,7 @@
                     </ul></div>
             </div>
             <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
-                <!--
-                <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
-                    <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
-                    <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
-                </div>
-                <a href="#trivia-city" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Trivia</a>-->
-            </div>
+           </div>
         </div>
 
         <div data-url="leads" data-role="page" id="leads" class="ui-page demo-page" data-dom-cache="true" data-theme="a"
@@ -102,40 +96,18 @@
                 </div>
             </div>
             <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
-                <!--
-                <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
-                    <a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
-                    <a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
-                </div>
-                <a href="#trivia-city" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">Trivia</a>-->
             </div>
         </div>
 
 
 <!-- JavaScript at the bottom for fast page loading -->
-
-<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-<script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>-->
-<script src='js/libs/jquery-1.9.1.js'></script>
-<script src='js/libs/jquery.mobile-1.3.0.js'></script>
-
+<script src='js/libs/jquery-1.9.1.min.js'></script>
+<script src='js/libs/jquery.mobile-1.3.0.min.js'></script>
 
 <!-- scripts concatenated and minified via ant build script-->
 <script src="js/mylibs/respond.js"></script>
 <script src="js/script.js"></script>
 <!-- end concatenated and minified scripts-->
 
-<!-- Debugger - remove for production -->
-<!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
-
-<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
-<script>
-  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-  g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-  s.parentNode.insertBefore(g,s)}(document,"script"));
-</script>
--->
 </body>
 </html>
