@@ -1,113 +1,20 @@
-﻿<!doctype html>
-<!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
-<!-- Appcache Facts http://appcachefacts.info/ -->
-<!--[if IEMobile 7 ]>
-<html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
-<html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-
-    <title>Memapp</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
-    <!-- For iPhone 4 with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-    <!-- For first-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-    <!-- For nokia devices: -->
-    <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-
-    <!--iOS web app, deletable if not needed -->
-    <!--<meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-startup-image" href="img/l/splash.png">-->
-
-    <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
-
-    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-    <meta http-equiv="cleartype" content="on">
-
-    <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-    <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
-
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css?v=1">
-    <link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css">
-    <link rel="stylesheet" href="css/cgi.css">
-
-    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-    <script src="js/libs/modernizr-1.7.min.js"></script>
+    <title>Choose your destiny</title>
+    <style>
+        a.large{
+            font-size:2em;
+        }
+    </style>
 </head>
-
 <body>
 
-    <div data-url="news" data-role="page" id="news" class="ui-page" data-dom-cache="true" data-theme="a"
-             data-prev="null" data-next="leads">
-            <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
-                <h1>News</h1>
-                <a data-next="leads" href="#" data-direction="reverse" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-icon-shadow="false" class="ui-btn-right next"></a>
-            </div>
-            <div class="ui-content">
-                <div style="padding:20px;">
-                    <ul data-role="listview" data-inset="true">
-                        <li class="news_part"><a class="news_item" href="#">
-                            <img src="img/news_icon.png" width="150px" height="150px">
-                            <h2>New Client</h2>
-                            <p>Toyota</p></a>
-                        </li>
-                        <li class="news_part"><a class="news_item" href="#">
-                            <img src="img/news_icon.png" width="150px" height="150px">
-                            <h2>Warning</h2>
-                            <p>Laptops are slow</p></a>
-                        </li>
-                        <li class="news_part"><a class="news_item" href="#">
-                            <img src="img/news_icon.png" width="150px" height="150px">
-                            <h2>Building</h2>
-                            <p>Diegem office flooded</p></a>
-                        </li>
-                    </ul></div>
-            </div>
-            <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
-           </div>
-        </div>
-
-        <div data-url="leads" data-role="page" id="leads" class="ui-page demo-page" data-dom-cache="true" data-theme="a"
-             data-prev="prevCity" data-next="nextCity">
-            <div data-role="header" data-position="fixed" data-fullscreen="true" data-id="hdr" data-tap-toggle="false">
-                <h1>Leads</h1>
-                <a data-prev="news" href="#" data-direction="reverse" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-icon-shadow="false" class="prev"></a>
-            </div>
-            <div data-role="content" class="ui-content">
-                <div style="padding:20px;">
-                          <div style="width:30%;height:200px;background:red">
-                              ,sqmlc
-                          </div>
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
-            </div>
-        </div>
-
-
-<!-- JavaScript at the bottom for fast page loading -->
-<script src='js/libs/jquery-1.9.1.min.js'></script>
-<script src='js/libs/jquery.mobile-1.3.0.min.js'></script>
-
-<!-- scripts concatenated and minified via ant build script-->
-<script src="js/mylibs/respond.js"></script>
-<script src="js/script.js"></script>
-<!-- end concatenated and minified scripts-->
-
+<a class="large" href="index1.html">JQM swipe div</a> <br>
+<a class="large" href="index2.html">JQM swipe page</a> <br>
+<a class="large" href="index3.html">Cubiq swipeview</a> <br>
+<a class="large" href="index4.html">Idangero swiper</a> <br>
+<a class="large" href="index5.html">Iscroll</a> <br>
+<a class="large" href="index6.html">Custom</a> <br>
 </body>
 </html>

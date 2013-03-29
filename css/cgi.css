@@ -17,7 +17,7 @@ body {
 	padding-top:25px !important;
 }
 
-#news,#leads { background-image: url(../img/cgibg.png); }
+/*#news,#leads { background-image: url(../img/cgibg.png); }     */
 /* Background settings */
 .ui-page {
     background-size: cover;
