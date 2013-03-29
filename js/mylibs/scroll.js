@@ -80,9 +80,9 @@ function loaded() {
             if (pullDownEl.className.match('loading')) {
                 pullDownEl.className = '';
                 pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Pull down to refresh...';
-            } else if (pullUpEl.className.match('loading')) {
+            } else if (pullUpEl.className.match('loading')) {    /*
                 pullUpEl.className = '';
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up to load more...';
+                pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up to load more...';   */
             }
         },
         onScrollMove: function () {
@@ -95,13 +95,14 @@ function loaded() {
                 pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Pull down to refresh...';
                 this.minScrollY = -pullDownOffset;
             } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
+                /*
                 pullUpEl.className = 'flip';
                 pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Release to refresh...';
-                this.maxScrollY = this.maxScrollY;
+                this.maxScrollY = this.maxScrollY;                         */
             } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
-                pullUpEl.className = '';
+               /* pullUpEl.className = '';
                 pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up to load more...';
-                this.maxScrollY = pullUpOffset;
+                this.maxScrollY = pullUpOffset;   */
             }
         },
         onScrollEnd: function () {
@@ -110,9 +111,9 @@ function loaded() {
                 pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Loading...';
                 pullDownAction();	// Execute custom function (ajax call?)
             } else if (pullUpEl.className.match('flip')) {
-                pullUpEl.className = 'loading';
+                /*pullUpEl.className = 'loading';
                 pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Loading...';
-                pullUpAction();	// Execute custom function (ajax call?)
+                pullUpAction();	// Execute custom function (ajax call?)    */
             }
         }
     });
